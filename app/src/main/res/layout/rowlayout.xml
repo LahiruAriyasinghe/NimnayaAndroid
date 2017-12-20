@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0"
+            android:layout_height="40dp"
+            android:layout_width="40dp">
+
+            <ImageView
+                android:id="@+id/tx_userpic"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tx_username"
+                android:hint="Lahiru"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_weight="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tx_comment"
+                android:hint="Lahiru"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:gravity="left|fill_horizontal"
+                android:layout_weight="3"
+                android:paddingBottom="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0"
+        android:textAlignment="center"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:text="reply"
+            android:onClick="reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:paddingRight="20dp"
+            android:id="@+id/replybtn"
+            android:maxLength="4000"
+            android:textAlignment="textEnd"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:background="#00000000" />
+    </LinearLayout>
+
+
+</LinearLayout>
